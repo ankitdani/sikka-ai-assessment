@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 /* header */
 header {
   background: #222;
@@ -65,6 +69,29 @@ body {
   color: #ffd700;
 }
 
+/* Show hamburger on mobile */
+@media (max-width: 700px) {
+  .toggle-label {
+    display: block;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    display: none;
+    margin-top: 1rem;
+  }
+
+  .toggle-checkbox:checked ~ .nav-links {
+    display: flex;
+  }
+
+  .nav-links li {
+    padding: 0.5rem 0;
+    border-top: 1px solid #444;
+  }
+}
+
 /* Toggle styles */
 .toggle-checkbox {
   display: none;
@@ -93,7 +120,7 @@ body {
     align-items: center;
   }
 
-  .toggle-checkbox:checked + .toggle-label + .nav-links {
+  .toggle-checkbox:checked ~ .nav-links {
     display: flex;
   }
 

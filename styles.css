@@ -192,13 +192,13 @@ main {
 }
 
 /* About */
-.about {
+.section-block {
   padding: 3rem 1rem;
   background-color: #f4f4f4;
   text-align: center;
 }
 
-.about p {
+.section-block p {
   max-width: 700px;
   margin: auto;
   font-size: 1.1rem;

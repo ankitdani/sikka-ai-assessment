@@ -129,3 +129,32 @@ main {
   line-height: 1.6;
   text-align: justify;
 }
+
+/* Footer */
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  margin-top: 2rem;
+}
+
+.social-icons {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.social-icons a {
+  font-size: 1.5rem;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem;
+  border-radius: 50%;
+  background-color: #333;
+}
+
+.social-icons a:hover {
+  background-color: #555;
+}
